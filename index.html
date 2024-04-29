@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="" />
+        <meta name="keywords" content="HTML, CSS e JavaScript" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <title>PROAPROFISSAO</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <main>
+            <article class="container">
+                <div class="generated" id="generated">
+                    <div id="spinner" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+
+                    <div id="qrcode"></div>
+                </div>
+
+                <form id="generate-form" class="mt-4">
+                    <div class="input-section">
+                        <input
+                            id="url"
+                            type="url"
+                            placeholder="Enter a URL"
+                            required
+                        />
+
+                        <select name="size" id="size">
+                            <option value="100">100x100</option>
+                            <option value="200">200x200</option>
+                            <option value="300" selected>300x300</option>
+                            <option value="400">400x400</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Gerar QR Code</button>
+                </form>
+            </article>
+        </main>
+
+        <script src="assets/js/main.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+            integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>
