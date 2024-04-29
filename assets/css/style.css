@@ -23,12 +23,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 60px;
-    background: var(--color-dark);
+    background: #202125;
 }
 
 .container {
     width: 800px;
-    background-color: var(--color-light);
+    background-color: #202125;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 8px;
